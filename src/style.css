@@ -20,6 +20,7 @@ h1,
 h2,
 h3,
 h4,
+h5,
 h6,
 p {
   font-family: var(--basic-font-family);
@@ -68,6 +69,35 @@ li {
 .content-container h6 {
   margin-bottom: 235px;
 }
+.content-container h5 {
+  font-size: 48px;
+}
+.typesOfTools {
+  font-size: 12px;
+  color: var(--additional-color);
+}
+.photoProject {
+  max-width: 100%;
+  border: 1px solid black;
+  display: block;
+}
+.button {
+  margin-top: 50px;
+}
+.buttonLink {
+  background-color: black;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: var(--basic-color);
+  border: 1px solid black;
+  transition: all 200ms ease-in-out;
+}
+.buttonLink:hover {
+  background-color: var(--basic-color);
+  color: black;
+  text-decoration: none;
+}
+
 @media (max-width: 1200px) {
   .content-container h1,
   .content-container h2,
