@@ -1,5 +1,3 @@
-/* font-family: 'Playfair Display', serif;
-font-family: 'Raleway', sans-serif; */
 :root {
   --basic-color: #f0e8e0;
   --additional-color: #656464;
@@ -19,82 +17,89 @@ font-family: 'Raleway', sans-serif; */
   border: 10px solid black;
 }
 h1,
-h2 {
+h2,
+h3,
+h4,
+h6,
+p {
   font-family: var(--basic-font-family);
 }
-.titleName {
+.content-container h1 {
   font-size: 96px;
-  margin-left: 50px;
-  margin-top: 30px;
+  margin: 30px 0px 0px 50px;
 }
-.titleSecondName {
+.content-container h2 {
   margin-left: 200px;
   font-size: 74px;
 }
 .info {
-  margin-bottom: 100px;
-  margin-top: 50px;
-  margin-left: 200px;
-  font-family: var(--basic-font-family);
+  margin: 50px 0px 120px 200px;
   font-size: 14px;
 }
-ul {
-  list-style: none;
-}
-nav {
-  margin-top: 15px;
-}
-nav a {
+nav a,
+.socialLinks {
   text-decoration: none;
   color: var(--additional-color);
 }
 nav a:hover,
-nav li.active a {
+nav li.active a,
+.socialLinks:hover {
   color: black;
 }
 li {
   display: inline;
-  margin: 10px;
 }
-
-img {
+.capitalPhoto {
   max-width: 100%;
-  margin-top: 25px;
-  margin-bottom: 40px;
+  margin: 25px 0px 40px 0px;
 }
-
-.socialLinks {
-  color: var(--additional-color);
-  text-decoration: none;
-  margin-bottom: 35px;
+.secondaryPhoto {
+  max-width: 80%;
+  margin: 20px 0px 0px 40px;
 }
-.socialLinks:hover {
-  color: black;
+.content-container h3 {
+  margin-top: 10px;
+  font-size: 40px;
+}
+.content-container h4 {
+  margin-left: 50px;
+  font-size: 36px;
+}
+.content-container h6 {
+  margin-bottom: 235px;
 }
 @media (max-width: 1200px) {
-  .titleName,
-  .titleSecondName,
-  .info,
-  img {
+  .content-container h1,
+  .content-container h2,
+  .content-container h3,
+  .content-container h4,
+  .content-container h6,
+  .content-container p,
+  .content-container img {
     margin: 0 auto;
     display: block;
   }
-  li {
+  .content-container li {
     font-size: 12px;
   }
-  .titleName,
-  .titleSecondName {
+  .content-container h1,
+  .content-container h2,
+  .content-container h3,
+  .content-container h4 {
     font-size: 24px;
   }
-  .titleName {
+  .content-container h1,
+  .content-container p,
+  .socialLinks {
     margin-top: 20px;
   }
-  .info {
-    margin-top: 20px;
+  .content-container h6 {
+    font-size: 12px;
+  }
+  .content-container p {
     font-size: 12px;
   }
   .socialLinks {
     font-size: 12px;
-    margin-top: 20px;
   }
 }
