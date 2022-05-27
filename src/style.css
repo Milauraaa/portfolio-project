@@ -16,6 +16,7 @@ font-family: 'Raleway', sans-serif; */
 .hero {
   background: var(--basic-color);
   font-family: var(--additional-font-family);
+  border: 10px solid black;
 }
 h1,
 h2 {
@@ -24,16 +25,18 @@ h2 {
 .titleName {
   font-size: 96px;
   margin-left: 50px;
+  margin-top: 30px;
 }
 .titleSecondName {
   margin-left: 200px;
   font-size: 74px;
 }
 .info {
-  text-align: right;
-  margin-bottom: 300px;
-  margin-top: 30px;
+  margin-bottom: 100px;
+  margin-top: 50px;
+  margin-left: 200px;
   font-family: var(--basic-font-family);
+  font-size: 14px;
 }
 ul {
   list-style: none;
@@ -55,18 +58,43 @@ li {
 }
 
 img {
-  max-width: 70%;
-  margin-left: 140px;
+  max-width: 100%;
   margin-top: 25px;
   margin-bottom: 40px;
 }
-.links {
-  margin-bottom: 32px;
-}
+
 .socialLinks {
   color: var(--additional-color);
   text-decoration: none;
+  margin-bottom: 35px;
 }
 .socialLinks:hover {
   color: black;
+}
+@media (max-width: 1200px) {
+  .titleName,
+  .titleSecondName,
+  .info,
+  img {
+    margin: 0 auto;
+    display: block;
+  }
+  li {
+    font-size: 12px;
+  }
+  .titleName,
+  .titleSecondName {
+    font-size: 24px;
+  }
+  .titleName {
+    margin-top: 20px;
+  }
+  .info {
+    margin-top: 20px;
+    font-size: 12px;
+  }
+  .socialLinks {
+    font-size: 12px;
+    margin-top: 20px;
+  }
 }
