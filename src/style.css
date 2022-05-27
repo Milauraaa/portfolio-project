@@ -1,2 +1,72 @@
 /* font-family: 'Playfair Display', serif;
-font-family: 'Raleway', sans-serif; /*
+font-family: 'Raleway', sans-serif; */
+:root {
+  --basic-color: #f0e8e0;
+  --additional-color: #656464;
+  --basic-font-family: "Playfair Display", serif;
+  --additional-font-family: "Raleway", sans-serif;
+}
+.logo {
+  background-color: black;
+  color: var(--basic-color);
+  padding: 10px 15px;
+  text-align: center;
+  font-size: 24px;
+}
+.hero {
+  background: var(--basic-color);
+  font-family: var(--additional-font-family);
+}
+h1,
+h2 {
+  font-family: var(--basic-font-family);
+}
+.titleName {
+  font-size: 96px;
+  margin-left: 50px;
+}
+.titleSecondName {
+  margin-left: 200px;
+  font-size: 74px;
+}
+.info {
+  text-align: right;
+  margin-bottom: 300px;
+  margin-top: 30px;
+  font-family: var(--basic-font-family);
+}
+ul {
+  list-style: none;
+}
+nav {
+  margin-top: 15px;
+}
+nav a {
+  text-decoration: none;
+  color: var(--additional-color);
+}
+nav a:hover,
+nav li.active a {
+  color: black;
+}
+li {
+  display: inline;
+  margin: 10px;
+}
+
+img {
+  max-width: 70%;
+  margin-left: 140px;
+  margin-top: 25px;
+  margin-bottom: 40px;
+}
+.links {
+  margin-bottom: 32px;
+}
+.socialLinks {
+  color: var(--additional-color);
+  text-decoration: none;
+}
+.socialLinks:hover {
+  color: black;
+}
