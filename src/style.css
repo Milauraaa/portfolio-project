@@ -18,19 +18,14 @@
 }
 h1,
 h2,
-h3,
-h4,
-h5,
-h6,
 p {
   font-family: var(--basic-font-family);
 }
-.content-container h1 {
+.firstName {
   font-size: 96px;
-  margin: 30px 0px 0px 50px;
 }
-.content-container h2 {
-  margin-left: 200px;
+.secondName {
+  margin-left: 190px;
   font-size: 74px;
 }
 .info {
@@ -54,23 +49,11 @@ li {
   max-width: 100%;
   margin: 25px 0px 40px 0px;
 }
-.secondaryPhoto {
-  max-width: 80%;
-  margin: 20px 0px 0px 40px;
+.funnyPhoto {
+  max-width: 40%;
 }
-.content-container h3 {
-  margin-top: 10px;
-  font-size: 40px;
-}
-.content-container h4 {
-  margin-left: 50px;
-  font-size: 36px;
-}
-.content-container h6 {
+.aboutBlock {
   margin-bottom: 235px;
-}
-.content-container h5 {
-  font-size: 48px;
 }
 .typesOfTools {
   font-size: 12px;
@@ -97,39 +80,31 @@ li {
   color: black;
   text-decoration: none;
 }
+.contactTitle {
+  font-size: 24px;
+  text-decoration: underline;
+  letter-spacing: 0.5px;
+}
 
 @media (max-width: 1200px) {
   .content-container h1,
   .content-container h2,
-  .content-container h3,
-  .content-container h4,
-  .content-container h6,
-  .content-container p,
-  .content-container img {
+  .content-container p {
     margin: 0 auto;
     display: block;
   }
-  .content-container li {
-    font-size: 12px;
-  }
-  .content-container h1,
-  .content-container h2,
-  .content-container h3,
-  .content-container h4 {
+  .firstName,
+  .secondName {
     font-size: 24px;
+  }
+  .content-container li,
+  .content-container p,
+  .socialLinks {
+    font-size: 12px;
   }
   .content-container h1,
   .content-container p,
   .socialLinks {
     margin-top: 20px;
-  }
-  .content-container h6 {
-    font-size: 12px;
-  }
-  .content-container p {
-    font-size: 12px;
-  }
-  .socialLinks {
-    font-size: 12px;
   }
 }
