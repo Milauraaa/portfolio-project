@@ -115,8 +115,16 @@ nav li {
   .socialLinks {
     font-size: 12px;
   }
+  .,
+  .contactTitle {
+    font-size: 16px;
+  }
   .socialLinks,
   .info {
     margin-top: 20px;
+  }
+  .workPage {
+    margin: 0;
+    text-align: left;
   }
 }
