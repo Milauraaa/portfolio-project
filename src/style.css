@@ -102,7 +102,7 @@ nav li {
   p,
   .info,
   .aboutBlock {
-    margin: 0 auto;
+    margin: 0;
     display: block;
   }
   .firstName,
@@ -121,9 +121,13 @@ nav li {
   .contactTitle {
     font-size: 16px;
   }
+
   .socialLinks,
   .info {
     margin-top: 20px;
+  }
+  .info {
+    margin-bottom: 80px;
   }
   .workPage {
     margin: 0;
